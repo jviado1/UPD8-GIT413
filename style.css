@@ -1,0 +1,530 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of css reset */
+
+/* global styles */
+body, html {
+  height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: "Oswald", serif;
+}
+
+h2 {font-size: 76px;}
+
+body {
+  font-family: "Host Grotesk", serif;
+}
+
+#logo {
+  height: auto;
+}
+
+a.nav-link:hover {
+  color: white;
+}
+.navbar {
+  background-color: #2d2d2d;
+}
+.navbar a {
+  color: #ece948;
+} 
+.dropdown-menu a{
+  color: #1a1a1a;
+}
+
+button.navbar-toggler.custom-toggler {
+  color: #ece948;
+  background-color: #ece948;
+  
+}
+
+.hero-image {
+  background-image: url("image/streamline.png");
+  height: 100vh;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.hero-buttons a:hover {
+  background-color: white;
+  color: #1a1a1a;
+  transition: 0.3s;
+}
+
+.hero-buttons {
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#about, #projects {
+  height: fit-content;
+  color: white;
+  background-image: url("image/board.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.desc a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+#about, #contact, #projects, #process{
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#carouselExampleCaptions {
+  width: 50vw;
+}
+
+.carousel img{
+  border-radius: 10px;
+}
+
+.carousel-item .carousel-caption {
+  display: none;
+}
+
+#project-contents {
+  display: flex;
+}
+
+#project-description {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+
+.desc {
+  padding-bottom: 20px;
+}
+
+.desc h3 {
+  font-size: 2rem;
+  color: #ece948;
+}
+
+.desc p, .desc a {
+  padding-top: 10px;
+  line-height: 1.3;
+}
+
+.desc a {
+  text-decoration: underline;
+  font-style: italic;
+  color: #ece948;
+  font-size: 0.8rem;
+}
+#about-content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  justify-content: center;
+}
+
+#about span {
+  color: #ece948;
+}
+
+#about p {
+  font-size: 20px;
+  line-height: 1.3;
+  width: 40vw;
+}
+#joab {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px; 
+}
+
+section {
+  padding-top: 50px;
+}
+
+#process {
+  background-color: #ece948;
+  height: fit-content;
+  padding: 70px;
+}
+h1 {display: none;}
+h3 {
+  font-size: 1.2rem;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.2);
+  width: 600px;
+  height: 500px;
+  transition: 0.3s;
+  place-self: center;
+  background-color: #2d2d2d;
+  color: white;
+  border: none;
+}
+.card h4 {
+  color: #ece948;
+}
+.card img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.card .container{
+  line-height: 1.5;
+  padding-top:10px ;
+}
+#cards {
+  display: flex;
+  gap: 50px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 20px;
+  padding-bottom: 30px;
+  height: fit-content;
+}
+
+.main {
+  padding-top: 400px;
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+}
+
+#contact {
+  height: fit-content;
+  background-color: #ece948;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+  font-size: 0.75em;
+  color: #999;
+  top: -5px;
+  -webkit-transition: all 0.225s ease;
+  transition: all 0.225s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 293px;
+  margin: 1rem 0;
+  position: relative;
+  border-radius: 4px;
+}
+
+small {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px){
+  .styled-input {
+      width:100%;
+  }
+}
+
+.styled-input label {
+  color: #999;
+  padding: 1.3rem 30px 1rem 30px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+  width: 650px;
+  max-width: 100%;
+}
+
+input,
+textarea {
+  padding: 30px;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.input-container {
+  width: 650px;
+  max-width: 100%;
+  margin: 20px auto 25px auto;
+}
+
+.submit-btn {
+  /* float: right; */
+  padding: 7px 35px;
+  border-radius: 60px;
+  display: inline-block;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.06),
+            0 2px 10px 0 rgba(0,0,0,0.07);
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(1px);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.10),
+            0 1px 1px 0 rgba(0,0,0,0.09);
+}
+
+
+
+input[type=checkbox] + label {
+color: #ccc;
+font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+color: #f00;
+font-style: normal;
+}
+
+footer {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ece948;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+@media (max-width: 786px) {
+  h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .hero-image {
+    background-image: url("image/streamline-mobile.png");
+    height: 100vh;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 55%;
+  }
+  .hero-buttons a {
+    padding: 8px;
+  }
+  #about {
+    height: fit-content;
+  }
+  #about-content {
+    flex-direction:column;
+    align-items: center;
+    gap: 100px;
+  }
+  #joab {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #about p {
+    font-size: 16px;
+    line-height: 1.3;
+    width: 70vw;
+  }
+  #process {
+    height: fit-content;
+  }
+  #cards {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .card {
+    width: 300px;
+    height: 350px;
+  }
+  .card img {
+    height: 300px;
+  }
+  #contact {
+    height: fit-content;
+  }
+  .submit-btn {
+    width:100%;
+    float: none;
+    text-align:center;
+  }
+  
+}
+
+@media (min-width: 786px) {
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 40vw;
+    
+  }
+}
+
+@media (max-width: 992px) {
+  #project-contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  #carouselExampleCaptions {
+    width: 80vw;
+  }
+  #project-description {
+    width: 80vw;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-toggler.custom-toggler {
+    background-color: #ece948;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+  }
+
+  #process {
+    height: fit-content;
+  }
+  .card {
+    width: 400px;
+    height: 400px;
+    
+  }
+
+  .card img{
+    width: 25vw
+  }
+  
+}
+
+@media (min-width: 2000px) {
+  .hero-buttons {top: 70%;}
+
+  #cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: fit-content;
+  }
+
+  #process {
+    height: fit-content;
+  }
+}
